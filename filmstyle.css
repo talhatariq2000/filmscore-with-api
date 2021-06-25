@@ -1,0 +1,88 @@
+#homepage{
+    background-color: black;
+}
+
+#general{
+    padding: 5px;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo{
+    height: 150px;
+    width: 266px;
+}
+
+#topmenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menulink{
+    text-decoration: none;
+    color: #8D8D8D;
+}
+.menulink:hover{
+    border: 1px solid #C54E4E;
+    border-radius: 10px;
+
+}
+.menuitem{
+    font-family: fantasy;
+}
+
+#stick{
+    float: right;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+}
+#stick img{
+    height: 30px;
+    width: 30px;
+}
+
+#featurehead{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid white;
+}
+#featurehead h3{
+    color: white;
+    font-size: 30px;
+}
+
+#feature{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.featurecontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+.featurecontent h4{
+    font-family: Garamond;
+    color: white;
+    font-size: 30px;
+}
+.featurecontent img{
+    padding: 10px;
+    height: 300px;
+    width: 450px;
+    border-radius: 20px;
+}
