@@ -1,0 +1,109 @@
+#homepage{
+    background-color: black;
+}
+
+#general{
+    padding: 5px;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo{
+    height: 150px;
+    width: 266px;
+}
+
+#topmenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menulink{
+    text-decoration: none;
+    color: #8D8D8D;
+}
+.menulink:hover{
+    border: 1px solid #C54E4E;
+    border-radius: 10px;
+
+}
+.menuitem{
+    font-family: fantasy;
+}
+
+#stick{
+    float: right;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+}
+#stick img{
+    height: 30px;
+    width: 30px;
+}
+
+#loginpage {
+    margin-top: 40px;
+    border: 2px solid grey;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#loginform {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+#usernamediv {
+    display: flex;
+    flex-direction: row;
+    color: grey;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#usernamediv input{
+    background-color: grey;
+}
+#passworddiv {
+    display: flex;
+    flex-direction: row;
+    color: grey;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#passworddiv input{
+    width: 190px;
+    background-color: grey;
+}
+
+#loginbuttondiv {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+#loginbuttondiv button{
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: gray;
+}
+
+#signuplink {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    color: white;
+}
+#signuplink a{
+    color: rgb(93, 93, 175);
+}
