@@ -16,9 +16,13 @@ function loginhandle() {
             console.log(response);
             currentuser = response.username;
             $("#loginbutton").val("");
-            $("#logintag").append(response.username);
-
-        }   
-        
+            $("#logintag").html(response.username);
+            alert("Logged in Successfully");
+            $("#username").val("");
+            $("#pass").val("");
+        },   
+        error:function(response){
+            alert("Failed to login, check username/password");
+        }
     });
 }
