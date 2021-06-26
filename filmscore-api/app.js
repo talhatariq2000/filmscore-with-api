@@ -11,6 +11,7 @@ var mongoose = require("mongoose");
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/api/users');
 var FilmsRouter = require('./routes/api/films');
+var actorsRouter = require('./routes/api/actors')
 
 
 var app = express();
@@ -28,6 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/api/users', usersRouter);
 app.use('/api/films', FilmsRouter);
+app.use('/api/actors', actorsRouter)
 
 
 // catch 404 and forward to error handler
