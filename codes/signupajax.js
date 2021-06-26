@@ -3,16 +3,20 @@ $(function(){
 });
 
 function signuphandle() {
-    var username = $("#username").val();
+    var name = $("#username").val();
     var email = $("#email").val();
     var password = $("#pass").val();
 
     $.ajax({
         url:"http://localhost:3000/api/users/signup",
         method:"POST",
-        data: { username, email, password},
+        data: { name, email, password},
         success:function(response){
             console.log(response);
+            alert("New User created");
+        },
+        error: function(response){
+            alert("Failed to login, check username/email/password");
         }   
         
     });
