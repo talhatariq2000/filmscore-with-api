@@ -24,7 +24,11 @@ router.post("/",async(req,res) => {
     let film = new Film();
     film.name = req.body.name;
     film.type = req.body.type;
+    film.director = req.body.director;
     film.cast = req.body.cast;
+    film.score = req.body.score;
+    film.total = req.body.total;
+    film.image = req.body.image;
 
     await film.save();
     return res.send(film);
@@ -34,8 +38,8 @@ router.put("/:id",async(req,res) => {
     let film = await Film.findById(req.params.id);
     film.score = req.body.name;
     film.total = req.body.total;
-    await product.save();
-    return res.send(product); 
+    await film.save();
+    return res.send(film); 
 });
 
 
