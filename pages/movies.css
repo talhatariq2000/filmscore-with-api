@@ -55,7 +55,7 @@
     flex-direction: column;
 }
 .movielistcontainer{
-    border: 1px solid red;
+    border: 1px solid green;
     border-radius: 50px;
     margin-left: 400px;
     margin-right:400px;
