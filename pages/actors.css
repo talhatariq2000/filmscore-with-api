@@ -55,7 +55,7 @@
     flex-direction: column;
 }
 .actorlistcontainer{
-    border: 1px solid red;
+    border: 1px solid cyan;
     border-radius: 50px;
     margin-left: 400px;
     margin-right:400px;
@@ -74,10 +74,7 @@
     align-items: flex-end;
     color: whitesmoke;
 }
-.movietitle h1{
+.actorlistcontainer h5{
     color: #9F9F9F;
-    font-family: monospace;
-}
-.movietitle h5{
     font-family: monospace;
 }
