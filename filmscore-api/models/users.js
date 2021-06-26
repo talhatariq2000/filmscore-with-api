@@ -2,7 +2,7 @@ var mongoose = require("mongoose");
 const Joi = require("@hapi/joi");
 
 userschema = mongoose.Schema({
-    username: String,
+    name: String,
     email: String,
     password: String
 });
@@ -11,7 +11,7 @@ var User = mongoose.model("User",userschema);
 
 function validatesignup(data) {
     const schema = Joi.object({
-        username: Joi.string().min(3).max(10).required(),
+        name: Joi.string().min(3).max(10).required(),
         email: Joi.string().email().min(3).max(20).required(),
         password: Joi.string().min(3).max(10).required(),
     });
@@ -20,7 +20,7 @@ function validatesignup(data) {
 
 function validatelogin(data) {
     const schema = Joi.object({
-        username: Joi.string().min(3).max(10).required(),
+        name: Joi.string().min(3).max(10).required(),
         password: Joi.string().min(3).max(10).required(),
     });
     return schema.validate(data, {abortEarly: false});
