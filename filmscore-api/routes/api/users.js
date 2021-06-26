@@ -16,7 +16,7 @@ router.post("/signup",async (req,res) => {
 });
 
 router.post("/login",async(req,res) => {
-    let user = await User.findOne({username:req.body.username});
+    let user = await User.findOne({name:req.body.name});
     if (!user) 
         return res.status(400).send("User doesnt exist");
     else if(user.password!=req.body.password)
